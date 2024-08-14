@@ -1,0 +1,107 @@
+  /* Основной фон для приложения */
+  ion-app {
+    --background: #f1f1f1; /* Основной цвет фона для всего приложения */
+  }
+
+  /* Фон для ion-content */
+  ion-content {
+    --background: #f1f1f1; /* Фон для всех вкладок */
+    --padding-top: 50px; /* Отступ сверху */
+  }
+
+  /* Стили для кастомного меню */
+  .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    position: relative; /* Для позиционирования стрелки */
+    transition: background-color 0.3s ease; /* Плавный переход для фона */
+  }
+
+  .menu-item:hover,
+  .menu-item:focus {
+    background-color: #3880ff; /* Цвет фона при наведении (тот же, что и активная вкладка) */
+    color: #ffffff; /* Цвет текста при наведении */
+  }
+
+  .menu-item:hover .arrow-icon,
+  .menu-item:focus .arrow-icon {
+    color: #ffffff; /* Цвет стрелочки при наведении */
+  }
+
+  .menu-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
+  }
+
+  .menu-text {
+    font-size: 17px;
+    flex: 1; /* Занимает все пространство до стрелки */
+  }
+
+  .arrow-icon {
+    width: 16px;
+    height: 16px;
+    color: #999;
+    position: absolute;
+    right: 16px; /* Отступ от правого края */
+    font-size: 16px;
+  }
+
+  /* Стили для иконок */
+  .list-item-icon {
+    width: 28px; /* Размер иконки */
+    height: 28px;
+    margin-right: 18px; /* Отступ справа от иконки */
+    color: #999; /* Цвет иконки */
+    font-size: 24px; /* Размер шрифта иконки */
+  }
+
+  /* Стилизация для элементов списка с иконками */
+  .list-item-content {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ширина контейнера */
+    padding: 16px; /* Удаление внутреннего отступа */
+    position: relative; /* Необходимо для позиционирования стрелки относительно контейнера */
+  }
+
+  .list-item-content .text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Выровнять текст по вертикали */
+    justify-content: center; /* Центрирование по вертикали */
+  }
+
+  .list-item-content .text-container div {
+    font-size: 17px;
+    color: #000; /* Цвет текста */
+  }
+
+  .list-item-content .text-container .role {
+    font-size: 13px;
+    color: #999; /* Цвет текста для роли */
+  }
+
+  /* Стили для заголовка над списком */
+  .menu-header {
+    font-size: 16px; /* Размер шрифта заголовка */
+    font-weight: 300; /* Еще тонкое начертание шрифта */
+    color: #7d7d7d; /* Цвет шрифта, немного темнее чем #8a8a8a */
+    padding: 8px 8px 8px 32px; /* Отступ вокруг заголовка: сверху, справа, снизу, слева */
+    margin: 0; /* Удаление внешних отступов */
+    text-align: left; /* Выравнивание текста по левому краю */
+  }
